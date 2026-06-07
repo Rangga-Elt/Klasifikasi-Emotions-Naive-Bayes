@@ -82,7 +82,7 @@ param_grid = {
 
 print(f"Jumlah dokumen: {len(X_train)}")
 
-# Grid search
+# GridsearchCV
 grid_search = GridSearchCV(pipeline, param_grid, cv=10, scoring='accuracy', n_jobs=-1, verbose=2)
 grid_search.fit(X_train, y_train)
 
