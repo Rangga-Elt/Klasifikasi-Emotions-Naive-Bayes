@@ -12,7 +12,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split, learning_curve, validation_curve, GridSearchCV
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support, classification_report, confusion_matrix
 
-# Upload file dataset
+# Load Dataset
 def upload_file():
     uploaded = files.upload()
     for filename in uploaded.keys():
